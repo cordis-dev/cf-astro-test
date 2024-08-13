@@ -1,0 +1,4 @@
+// Before:
+const canonicalURL = Astro.canonicalURL;
+// After:
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
